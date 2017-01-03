@@ -46,7 +46,7 @@ PASSPORT需要提供一个JSONP接口用于返回是否登录状态以及passpor
 
 ##跑例子要注意
 
-需要分别把2个开发域名http://passport.dev与http://sso.dev给passport_site_index.php与a_sub_site_index.php。
+需要分别把2个开发域名``http://passport.dev``与``http://sso.dev``给passport_site_index.php与a_sub_site_index.php。
 
 然后到SSO/Passport.php里把子站的公钥填到\SSO\Passport::$ssoPublicKeyMap里，子站的私钥填到SSO/Subsite.php的\SSO\Subsite::$ssoPrivateKey里。
 
