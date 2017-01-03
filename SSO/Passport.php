@@ -36,7 +36,7 @@ LxisQLup1pNPTdvWlQIDAQAB
      */
     public function __construct($currentLoginInfo = null)
     {
-        foreach (['passport_user_id','status','jsCallbackFunctionName'] as $key) {
+        foreach (['passportUserId','status','jsCallbackFunctionName'] as $key) {
             if (isset($currentLoginInfo[$key])) {
                 $this->{$key} = $currentLoginInfo[$key];
             }
