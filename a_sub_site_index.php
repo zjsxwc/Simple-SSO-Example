@@ -32,7 +32,7 @@ if (!$_POST) {
 
         success: function( response ) {
             console.log( 'In jquery jsonp succ: ', response ); // server response from passport
-            if (!response.status == "NO_AUTH") {
+            if (response.status == "NO_AUTH") {
                 alert('Not login');
                 return;
             }
