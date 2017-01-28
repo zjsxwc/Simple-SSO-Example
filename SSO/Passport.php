@@ -93,6 +93,6 @@ LxisQLup1pNPTdvWlQIDAQAB
         $dataStr = "";
         openssl_public_encrypt(json_encode($data),$dataStr, $publicKey );
         $data = base64_encode($dataStr);
-        return sprintf("%s('%s');",$this->jsCallbackFunctionName,json_encode(['status' => $this->status,'data' => $data]));
+        return sprintf("%s(%s);",$this->jsCallbackFunctionName,json_encode(['status' => $this->status,'data' => $data]));
     }
 }
