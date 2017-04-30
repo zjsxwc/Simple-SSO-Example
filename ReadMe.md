@@ -1,6 +1,6 @@
-#Simple SSO Example
+# Simple SSO Example
 
-##PREPARES
+## PREPARES
 
 一个专门用来登录的项目PASSPORT， 参考 passport_site_index.php
 
@@ -10,7 +10,7 @@
 
 
 
-##FEATURES
+## FEATURES
 
 PASSPORT项目能够在登录后，转跳到指定的地址
 
@@ -20,7 +20,7 @@ PASSPORT项目能够在登录后，转跳到指定的地址
 
 
 
-##REALIZATION
+## REALIZATION
 
 PASSPORT需要提供一个JSONP接口用于返回是否登录状态以及passport_user_id，同时该接口必须要校验请求的Referer是否是被允许的独立子项目域名，同时该JSONP返回的passport_user_id数据必须是通过对应子项目的RSA公钥加密后的结果，
 
@@ -44,7 +44,7 @@ PASSPORT需要提供一个JSONP接口用于返回是否登录状态以及passpor
 
 
 
-##跑例子要注意
+## 跑例子要注意
 
 需要分别把2个开发域名``http://passport.dev``与``http://sso.dev``给passport_site_index.php与a_sub_site_index.php。
 
